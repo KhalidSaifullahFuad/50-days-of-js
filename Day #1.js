@@ -5,10 +5,9 @@
 console.log(randomNumberGeneratorInRange(10, 50)); // should return a number between 10-50 (inclusive)
 console.log(randomNumberGeneratorInRange(100, 500)); // should return a number between 100-500 (inclusive)
 
-
+// solution
 function randomNumberGeneratorInRange(rangeStart, rangeEnd) {
-	// write your solution here
-    return new Date().getTime()%rangeEnd+rangeStart;
+	return new Date().getTime()%rangeEnd+rangeStart;
 }
 
 

@@ -6,6 +6,6 @@
 
 
 // Test Cases
-reverseAString("JavaScript is awesome") should return "emosewa si tpircSavaJ"
-reverseAString("Peter Parker is Spiderman") should return "namredipS si rekraP reteP"
-reverseAString("codedamn") should return "nmadedoc"
+reverseAString("JavaScript is awesome"); // should return "emosewa si tpircSavaJ"
+reverseAString("Peter Parker is Spiderman"); // should return "namredipS si rekraP reteP"
+reverseAString("codedamn"); // should return "nmadedoc"

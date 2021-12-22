@@ -5,6 +5,14 @@
 */
 
 // Solution
+function reverseGivenInteger(num) {    
+    let reversed = 0;
+    while (num != 0) {
+        reversed = reversed * 10 + num % 10;
+        num = Math.floor(num / 10);
+    }
+    return reversed;
+}
 
 // Test Cases
 console.log(reverseGivenInteger(3849));// returns 9483

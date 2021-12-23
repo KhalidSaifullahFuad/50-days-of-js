@@ -4,6 +4,13 @@
 * If the match is not found, these methods return -1.
 */
 
+// Solution
+function getTheGapX(str) {
+  var firstX = str.indexOf('X');
+  var lastX = str.lastIndexOf('X');
+  return lastX - firstX;
+}
+
 // Test Cases
 console.log(getTheGapX('XeroX')); // returns 4
 console.log(getTheGapX('Xamarin')); // returns 0

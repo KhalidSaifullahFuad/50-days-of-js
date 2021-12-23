@@ -4,6 +4,11 @@
 * test method of regular expression can be used to validate if the mobile number pattern matches or not.
 */
 
+// Solution
+function validateMobile(number){
+    return (/^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$/).test(number);
+}
+
 
 // Test Cases
 console.log(validateMobile('+919876543210')); // returns true

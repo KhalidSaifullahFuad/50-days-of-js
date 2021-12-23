@@ -3,6 +3,10 @@
 * Truncate a string to a certain number of words
 */
 
+// Solution
+function truncateWithWordLimit(str, wordLimit) {
+    return str.split(" ").slice(0, wordLimit).join(" ");
+}   
 
 // Test Cases
 console.log(truncateWithWordLimit("JavaScript is simple", 3); // returns "JavaScript is simple"

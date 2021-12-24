@@ -5,10 +5,7 @@
 */
 
 // Solution
-function validateMobile(number){
-    return (/^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$/).test(number);
-}
-
+const validateMobile = (mobile) => (/^(\+91|0)?\d{10}$/).test(mobile);
 
 // Test Cases
 console.log(validateMobile('+919876543210')); // returns true

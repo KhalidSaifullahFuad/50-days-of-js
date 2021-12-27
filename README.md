@@ -10,5 +10,7 @@ This 50 Days of JavaScript challenge was created by [Mehul Mohan](https://youtub
 
 **Solutions:** 
 ```
-
+function randomNumberGeneratorInRange(rangeStart, rangeEnd) {
+    return new Date().getTime() % rangeEnd + rangeStart;
+}
 ```

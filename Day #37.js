@@ -1,24 +1,17 @@
-// Rna Transcription
+// Tell if its a leap year
 /*
 Instructions
-Given a DNA strand, return its RNA complement (per RNA transcription).
+Given a year, report if it is a leap year.
 
-Both DNA and RNA strands are a sequence of nucleotides.
+The tricky thing here is that a leap year in the Gregorian calendar occurs:
 
-The four nucleotides found in DNA are adenine (A), cytosine (C), guanine (G) and thymine (T).
+on every year that is evenly divisible by 4 except every year that is evenly divisible by 100 unless the year is also evenly divisible by 400
 
-The four nucleotides found in RNA are adenine (A), cytosine (C), guanine (G) and uracil (U).
+For example, 1997 is not a leap year, but 1996 is. 1900 is not a leap year, but 2000 is.
 
-Given a DNA strand, its transcribed RNA strand is formed by replacing each nucleotide with its complement:
-
-G -> C
-C -> G
-T -> A
-A -> U
-
+Notes Though our exercise adopts some very simple rules, there is more to learn!
 */
 
-
 // Test Cases
-transcription('GCT'); // should return 'CGA'
-transcription('GATC'); // should return 'CUAG'
+isLeap(2022); // should return false
+isLeap(2020); // should return true

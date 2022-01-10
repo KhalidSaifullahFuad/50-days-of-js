@@ -11,3 +11,8 @@ Output
 Output will consist of a list of string values stating whether the respective member is to be placed in the senior or open category.
 
 */
+
+// Test Cases
+openOrSenior([[45, 12],[55,21],[19, -2],[104, 20]]); // should return ['Open', 'Senior', 'Open', 'Senior']
+openOrSenior([[3, 12],[55,1],[91, -2],[53, 23]]); // should return['Open', 'Open', 'Open', 'Open']
+openOrSenior([[59, 12],[55,-1],[12, -2],[12, 12]]); // should return ['Senior', 'Open', 'Open', 'Open'])

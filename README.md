@@ -1,4 +1,5 @@
 <h1 align='center'>50 Days of JavaScript!</h1>
+
 Level up your JavaScript skills with a daily coding challenge in 50 days. This 50 Days of JavaScript challenge was created by [Mehul Mohan](https://youtube.com/codedamn) founder of [codedamn](https://codedamn.com/).
 
 ------------------------------------

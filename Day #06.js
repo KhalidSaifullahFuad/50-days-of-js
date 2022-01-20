@@ -10,4 +10,4 @@ function truncateWithWordLimit(str, wordLimit) {
 
 // Test Cases
 console.log(truncateWithWordLimit("JavaScript is simple", 3); // returns "JavaScript is simple"
-console.log(truncateWithWordLimit("Codedamn is the best place to learn to code", 5); // returns "Codedamn is the best place"
+console.log(truncateWithWordLimit("Codedamn is the best place to learn to code", 5)); // returns "Codedamn is the best place"

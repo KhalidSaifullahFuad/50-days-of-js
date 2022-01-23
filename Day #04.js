@@ -6,10 +6,10 @@
 
 // Solution
 function  convertTo24HrsFormat(time) {
-    let timeArr = time.split(':');
+    const timeArr = time.split(':');
     let hours = timeArr[0];
-    let minutes = timeArr[1].substring(0,2);
-    let amPm = timeArr[1].substring(2);
+    const minutes = timeArr[1].substring(0,2);
+    const amPm = timeArr[1].substring(2);
     
     if (hours === '12' && amPm === 'AM') {
         hours = '00';

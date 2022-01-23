@@ -5,19 +5,19 @@
 */
 
 // Solution
-function  convertTo24HrsFormat(time) {
-    const timeArr = time.split(':');
-    let hours = timeArr[0];
-    const minutes = timeArr[1].substring(0,2);
-    const amPm = timeArr[1].substring(2);
-    
-    if (hours === '12' && amPm === 'AM') {
+function convertTo24HrsFormat(time) {
+    const newTime = time.slice(0, time.length - 2).split(':');
+    let hours = newTime[0];
+    const minutes = newTime[1];
+    const amPm = time.substr(time.length - 2);
+
+    if (amPm === 'AM' && hours === '12') {
         hours = '00';
     } else if (amPm === 'PM' && hours !== '12') {
-        hours = parseInt(hours) + 12;
+        hours = `${parseInt(hours) + 12}`;
     }
-    
-    return `${hours}:${minutes}`;
+
+    return `${hours.padStart(2,'0')}:${minutes.padStart(2,'0')}`;
 }
 
 // Test Cases

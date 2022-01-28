@@ -56,3 +56,31 @@ function reverseAString(str) {
     return str.split('').reverse().join('');
 }
 ```
+
+------------------------------------
+
+## Day 4
+
+**Problem:** Write a function which can convert the time input given in 12 hours format to 24 hours format.
+
+**Description:**
+
+* The check for 'AM' and 'PM' can be verified using endsWith String method
+* An extra 0 would be needed if the hours have single digit
+
+```#! JavaScript
+function convertTo24HrsFormat(time) {
+    const newTime = time.slice(0, time.length - 2).split(':');
+    let hours = newTime[0];
+    const minutes = newTime[1];
+    const amPm = time.substr(time.length - 2);
+
+    if (amPm === 'AM' && hours === '12') {
+        hours = '00';
+    } else if (amPm === 'PM' && hours !== '12') {
+        hours = `${parseInt(hours) + 12}`;
+    }
+
+    return `${hours.padStart(2,'0')}:${minutes.padStart(2,'0')}`;
+}
+```

@@ -1,16 +1,17 @@
 <h1 align='center'>50 Days of JavaScript!</h1>
 
-Level up your JavaScript skills with a daily coding challenge in 50 days. This 50 Days of JavaScript challenge was created by [Mehul Mohan](https://youtube.com/codedamn) founder of [codedamn](https://codedamn.com/).
+[](https://codedamn.com/)
+This my solution for the challenge. Join in this [challenge](https://codedamn.com/50-days-of-js), and boost up your JavaScript knowledge.
 
 ------------------------------------
 
-## Day 1
+### Day 1
 
 **Problem:** Function which returns a random number in the given range.
 
 **Description:**  Create a function which returns a random number in the given range of values both inclusive.
 
-**Solutions:**
+**Solution:**
 
 ```#! JavaScript
 function randomNumberGeneratorInRange(rangeStart, rangeEnd) {
@@ -29,7 +30,7 @@ function randomNumberGeneratorInRange(rangeStart, rangeEnd) {
 * String can be reversed by iterating it and storing it in reverse order
 * String can also be reversed by converting it to array, then joining it after reversing
 
-**Solutions:**
+**Solution:**
 
 ```#! JavaScript
 function reverseAString(str) {
@@ -49,7 +50,7 @@ function reverseAString(str) {
 * String can also be reversed by converting it to array, then joining it after reversing.
 
 
-**Solutions:**
+**Solution:**
 
 ```#! JavaScript
 function reverseAString(str) {
@@ -68,6 +69,8 @@ function reverseAString(str) {
 * The check for 'AM' and 'PM' can be verified using endsWith String method
 * An extra 0 would be needed if the hours have single digit
 
+**Solution:**
+
 ```#! JavaScript
 function convertTo24HrsFormat(time) {
     const newTime = time.slice(0, time.length - 2).split(':');
@@ -82,5 +85,29 @@ function convertTo24HrsFormat(time) {
     }
 
     return `${hours.padStart(2,'0')}:${minutes.padStart(2,'0')}`;
+}
+```
+
+------------------------------------
+
+## Day 5
+
+**Problem:** Write a function which accepts a string argument and returns the count of characters between the first and last character 'X'.
+
+**Description:**
+
+* indexOf and lastIndexOf are the methods on String which returns the position of the given string in the input string from start and end respectively.
+* If the match is not found, these methods return -1.
+
+**Solution:**
+
+```#! JavaScript
+function getTheGapX(str) {
+    const firstIndex = str.indexOf('X');
+    const lastIndex = str.lastIndexOf('X');
+    if (firstIndex == -1 || lastIndex == -1) {
+        return -1;
+    }
+    return lastIndex - firstIndex;
 }
 ```

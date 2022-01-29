@@ -129,3 +129,22 @@ function truncateWithWordLimit(str, wordLimit) {
     return str.split(" ").slice(0, wordLimit).join(" ");
 }   
 ```
+
+------------------------------------
+
+## Day 7
+
+**Problem:** Create a regular expression to validate if the given input is valid Indian mobile number or not.
+
+**Description:**
+
+* Regular expression check has to have an optional +91 or 0 in the beginning, then an optional space and 10 digits.
+* test method of regular expression can be used to validate if the mobile number pattern matches or not.
+
+**Solution:**
+
+```#! JavaScript
+function validateMobile(mobileNumber) {
+    return (/^(\+91|0)?\s?\d{10}$/).test(mobileNumber);
+}  
+```

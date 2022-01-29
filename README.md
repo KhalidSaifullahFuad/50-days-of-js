@@ -111,3 +111,21 @@ function getTheGapX(str) {
     return lastIndex - firstIndex;
 }
 ```
+
+------------------------------------
+
+## Day 6
+
+**Problem:** Write a function to truncate a string to a certain number of words.
+
+**Description:**
+
+* Truncate a string to a certain number of words
+
+**Solution:**
+
+```#! JavaScript
+function truncateWithWordLimit(str, wordLimit) {
+    return str.split(" ").slice(0, wordLimit).join(" ");
+}   
+```

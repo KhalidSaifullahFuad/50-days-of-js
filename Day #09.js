@@ -7,7 +7,7 @@
 function isEmpty(obj) {
     return Object.keys(obj).length === 0;
 }
-// Test Cases
 
+// Test Cases
 console.log(isEmpty({})); // returns true
 console.log(isEmpty({key: 1})); // returns false

@@ -1,6 +1,5 @@
 <h1 align='center'>50 Days of JavaScript!</h1>
 
-[](https://codedamn.com/)
 This my solution for the challenge. Join in this [challenge](https://codedamn.com/50-days-of-js), and boost up your JavaScript knowledge.
 
 ------------------------------------
@@ -127,7 +126,7 @@ function getTheGapX(str) {
 ```#! JavaScript
 function truncateWithWordLimit(str, wordLimit) {
     return str.split(" ").slice(0, wordLimit).join(" ");
-}   
+}
 ```
 
 ------------------------------------
@@ -146,5 +145,24 @@ function truncateWithWordLimit(str, wordLimit) {
 ```#! JavaScript
 function validateMobile(mobileNumber) {
     return (/^(\+91|0)?\s?\d{10}$/).test(mobileNumber);
-}  
+}
+```
+
+------------------------------------
+
+## Day 8
+
+**Problem:** Write a function which accepts two valid dates and returns the difference between them as number of days.
+
+**Description:**
+
+* The difference between 2 dates in JavaScript will give the time difference in milliseconds.
+* Time difference can be converted in to days by dividing the 24Hrs time in milliseconds.
+
+**Solution:**
+
+```#! JavaScript
+function getDaysBetweenDates(date1, date2) {
+    return Math.abs(new Date(date1).getTime() - new Date(date2).getTime()) / (1000 * 3600 * 24);
+}
 ```

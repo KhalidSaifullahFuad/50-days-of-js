@@ -166,3 +166,21 @@ function getDaysBetweenDates(date1, date2) {
     return Math.abs(new Date(date1).getTime() - new Date(date2).getTime()) / (1000 * 3600 * 24);
 }
 ```
+
+------------------------------------
+
+## Day 9
+
+**Problem:** Write a function to check if an object is empty or not in javaScript.
+
+**Description:**
+
+* How to check if an object is empty or not in javaScript.
+
+**Solution:**
+
+```#! JavaScript
+function isEmpty(obj) {
+    return Object.keys(obj).length === 0;
+}
+```

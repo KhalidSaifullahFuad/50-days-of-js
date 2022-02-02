@@ -4,7 +4,7 @@ This my solution for the challenge. Join in this [challenge](https://codedamn.co
 
 ------------------------------------
 
-### Day 1
+## Day 1
 
 **Problem:** Function which returns a random number in the given range.
 
@@ -182,5 +182,31 @@ function getDaysBetweenDates(date1, date2) {
 ```#! JavaScript
 function isEmpty(obj) {
     return Object.keys(obj).length === 0;
+}
+```
+
+------------------------------------
+
+## Day 10
+
+**Problem:** Write a function to remove array element based on object property.
+
+**Description:**
+
+* How to remove array element based on object property.
+
+**Solution:**
+
+```#! JavaScript
+const array = [
+    { field: "id", operator: "eq" },
+    { field: "cStatus", operator: "eq" },
+    { field: "money", operator: "eq" },
+];
+
+function removeArrayElement(filterField) {
+    return array.filter(function (element) {
+        return element.field !== filterField;
+    });
 }
 ```

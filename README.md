@@ -210,3 +210,20 @@ function removeArrayElement(filterField) {
     });
 }
 ```
+
+
+## Day 11
+
+**Problem:** Return the N-th value of the Fibonacci sequence.
+
+**Description:**
+
+* Return the N-th value of the Fibonacci sequence
+
+**Solution:**
+
+```#! JavaScript
+function fibonacci(n) {
+    return (n<=1) ? n : fibonacci(n - 1) + fibonacci(n - 2);
+}
+```

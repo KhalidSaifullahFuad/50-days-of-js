@@ -39,6 +39,27 @@ Put it all together to get nothing but plain English.
 The program must also report any values that are out of range.
 */
 
+// Solution
+const sayNumberInEnglish = (n) => {
+    if (n < 0 || n > 999_999_999_999) {
+        return 'Out of range';
+    }
+    const numbers = [
+        'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten',
+    ]
+    const teens = [
+        'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen',
+    ]
+    const tens = [
+        'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety',
+    ]
+    const scales = [
+        'thousand', 'million', 'billion', 'trillion',
+    ]
+    const result = [];
+
+}
+
 // Test Cases
-// 14 becomes "fourteen".
-// 1323 becomes "one thousand three hundred twenty-three".
+console.log(sayNumberInEnglish(14)); // 14 becomes "fourteen".
+console.log(sayNumberInEnglish(1323)); // 1323 becomes "one thousand three hundred twenty-three".

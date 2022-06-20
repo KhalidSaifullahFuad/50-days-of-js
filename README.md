@@ -1,8 +1,8 @@
 <h1 align='center'>50 Days of JavaScript!</h1>
 
-This my solution for the challenge. Join in this [challenge](https://codedamn.com/50-days-of-js), and boost up your JavaScript knowledge.
+#### These are my solutions for this challenge. You can also join in this [challenge](https://codedamn.com/50-days-of-js), and boost up your JavaScript knowledge. 💪
 
-------------------------------------
+<br>
 
 ## Day 1
 
@@ -12,13 +12,13 @@ This my solution for the challenge. Join in this [challenge](https://codedamn.co
 
 **Solution:**
 
-```#! JavaScript
+```JavaScript
 function randomNumberGeneratorInRange(rangeStart, rangeEnd) {
     return new Date().getTime() % rangeEnd + rangeStart;
 }
 ```
 
-------------------------------------
+<br>
 
 ## Day 2
 
@@ -31,13 +31,13 @@ function randomNumberGeneratorInRange(rangeStart, rangeEnd) {
 
 **Solution:**
 
-```#! JavaScript
+```JavaScript
 function reverseAString(str) {
     return str.split('').reverse().join('');
 }
 ```
 
-------------------------------------
+<br>
 
 ## Day 3
 
@@ -51,13 +51,13 @@ function reverseAString(str) {
 
 **Solution:**
 
-```#! JavaScript
+```JavaScript
 function reverseAString(str) {
     return str.split('').reverse().join('');
 }
 ```
 
-------------------------------------
+<br>
 
 ## Day 4
 
@@ -70,7 +70,7 @@ function reverseAString(str) {
 
 **Solution:**
 
-```#! JavaScript
+```JavaScript
 function convertTo24HrsFormat(time) {
     const newTime = time.slice(0, time.length - 2).split(':');
     let hours = newTime[0];
@@ -87,7 +87,7 @@ function convertTo24HrsFormat(time) {
 }
 ```
 
-------------------------------------
+<br>
 
 ## Day 5
 
@@ -100,7 +100,7 @@ function convertTo24HrsFormat(time) {
 
 **Solution:**
 
-```#! JavaScript
+```JavaScript
 function getTheGapX(str) {
     const firstIndex = str.indexOf('X');
     const lastIndex = str.lastIndexOf('X');
@@ -111,7 +111,7 @@ function getTheGapX(str) {
 }
 ```
 
-------------------------------------
+<br>
 
 ## Day 6
 
@@ -123,13 +123,13 @@ function getTheGapX(str) {
 
 **Solution:**
 
-```#! JavaScript
+```JavaScript
 function truncateWithWordLimit(str, wordLimit) {
     return str.split(" ").slice(0, wordLimit).join(" ");
 }
 ```
 
-------------------------------------
+<br>
 
 ## Day 7
 
@@ -142,13 +142,13 @@ function truncateWithWordLimit(str, wordLimit) {
 
 **Solution:**
 
-```#! JavaScript
+```JavaScript
 function validateMobile(mobileNumber) {
     return (/^(\+91|0)?\s?\d{10}$/).test(mobileNumber);
 }
 ```
 
-------------------------------------
+<br>
 
 ## Day 8
 
@@ -161,13 +161,13 @@ function validateMobile(mobileNumber) {
 
 **Solution:**
 
-```#! JavaScript
+```JavaScript
 function getDaysBetweenDates(date1, date2) {
     return Math.abs(new Date(date1).getTime() - new Date(date2).getTime()) / (1000 * 3600 * 24);
 }
 ```
 
-------------------------------------
+<br>
 
 ## Day 9
 
@@ -179,13 +179,13 @@ function getDaysBetweenDates(date1, date2) {
 
 **Solution:**
 
-```#! JavaScript
+```JavaScript
 function isEmpty(obj) {
     return Object.keys(obj).length === 0;
 }
 ```
 
-------------------------------------
+<br>
 
 ## Day 10
 
@@ -197,7 +197,7 @@ function isEmpty(obj) {
 
 **Solution:**
 
-```#! JavaScript
+```JavaScript
 const array = [
     { field: "id", operator: "eq" },
     { field: "cStatus", operator: "eq" },
@@ -211,6 +211,7 @@ function removeArrayElement(filterField) {
 }
 ```
 
+<br>
 
 ## Day 11
 
@@ -222,7 +223,7 @@ function removeArrayElement(filterField) {
 
 **Solution:**
 
-```#! JavaScript
+```JavaScript
 function fibonacci(n) {
     return (n<=1) ? n : fibonacci(n - 1) + fibonacci(n - 2);
 }
